@@ -41,6 +41,8 @@ public class simSetup extends StarMacro {
     new java.io.File(resolvePath("streamlinesSetup.java"))).play();
   new StarScript(getActiveRootObject(),
     new java.io.File(resolvePath("saveData.java"))).play();
+  // new StarScript(getActiveRootObject(),
+  //   new java.io.File(resolvePath("shearData.java"))).play();  
   }
 }
 

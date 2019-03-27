@@ -13,8 +13,8 @@ public class simSetup extends StarMacro {
 
   // main variables
     public String mainDirectory = "D:\\Documents\\Northumbria University\\PhD Research\\CFD\\Platoon Surface Pressure Sensitivity\\Models\\";
-    public String leadingVehicle = "Estate Back.stl";
-    public String trailingVehicle = "FB.stl";
+    public String leadingVehicle = "Eotch Back.stl";
+    public String trailingVehicle = "EB.stl";
 
   // vehicle geometry 
     public double leadingVehicleLength = 4.612;
@@ -26,8 +26,8 @@ public class simSetup extends StarMacro {
     int TVtxtLength = (trailingVehicle.length() - 4);
   
   // simulation variables
-    public double timeStep = 0.001;
-    public double physicalTime = 1;
+    // public double timeStep = 0.001;
+    // public double physicalTime = 1;
     public double velocity = 30.0;
     public double density = 1.18415;
 
@@ -51,8 +51,8 @@ public class simSetup extends StarMacro {
     new java.io.File(resolvePath("Monitors.java"))).play();
   new StarScript(getActiveRootObject(),
     new java.io.File(resolvePath("fieldFunctions.java"))).play();
-  new StarScript(getActiveRootObject(),
-    new java.io.File(resolvePath("dataExport.java"))).play();
+  // new StarScript(getActiveRootObject(),
+  //   new java.io.File(resolvePath("dataExport.java"))).play();
   }
 }
 

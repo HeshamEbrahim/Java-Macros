@@ -12,6 +12,12 @@ public class Solvers extends simSetup {
   public void execute() {
     Simulation simulation_0 = 
       getActiveSimulation();
+    // stopping criteria
+    StepStoppingCriterion stepStoppingCriterion_0 = 
+      ((StepStoppingCriterion) simulation_0.getSolverStoppingCriterionManager().getSolverStoppingCriterion("Maximum Steps"));
+
+    stepStoppingCriterion_0.setMaximumNumberSteps(5000);
+    
     // simulation time-step
         ImplicitUnsteadySolver implicitUnsteadySolver_0 = 
             ((ImplicitUnsteadySolver) simulation_0.getSolverManager().getSolver(ImplicitUnsteadySolver.class));
@@ -35,6 +41,8 @@ public class Solvers extends simSetup {
             ((PhysicalTimeStoppingCriterion) simulation_0.getSolverStoppingCriterionManager().getSolverStoppingCriterion("Maximum Physical Time"));
 
         physicalTimeStoppingCriterion_0.getMaximumTime().setValue(physicalTime);
+
+    
   }
 
 }

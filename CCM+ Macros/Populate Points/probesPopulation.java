@@ -48,7 +48,7 @@ public class probesPopulation extends StarMacro {
 
         CurrentView currentView_0 = scene_1.getCurrentView();
         currentView_0.setInput(new DoubleVector(new double[]{5.280963583405624E-4, 0.07167807182777301, -0.009389237076966827}), new DoubleVector(new double[]{-0.02154979710385694, 0.21065168804168466, 0.41702085604184463}), new DoubleVector(new double[]{0.0078053121782873285, 0.9508679367009188, -0.30949837488416143}), 0.11323071983682062, 1);
-        String filetoOpen = "C:\\Users\\Windtunnel\\Documents\\GitHub\\NU-Java\\CCM+ Macros\\Populate Points\\Points csv file.csv";
+        String filetoOpen = "C:\\Users\\Windtunnel\\Documents\\GitHub\\Java-Macros\\CCM+ Macros\\Populate Points\\Points csv file.csv";
         // JFileChooser fileChooser = new JFileChooser();
         // fileChooser.setCurrentDirectory(sim.getSessionDirFile());
 

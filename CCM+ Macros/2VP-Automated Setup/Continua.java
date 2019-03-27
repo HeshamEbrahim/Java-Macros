@@ -31,7 +31,7 @@ public class Continua extends simSetup {
 
         physicsContinuum_0.enable(ThreeDimensionalModel.class);
 
-        physicsContinuum_0.enable(ImplicitUnsteadyModel.class);
+        physicsContinuum_0.enable(SteadyModel.class);
 
         physicsContinuum_0.enable(SingleComponentGasModel.class);
 

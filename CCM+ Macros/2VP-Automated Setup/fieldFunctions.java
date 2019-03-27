@@ -135,4 +135,17 @@ public class fieldFunctions extends simSetup {
 
   }
 
+// Shear Stress Tensor
+// UserFieldFunction userFieldFunction_10 = 
+// simulation_0.getFieldFunctionManager().createFieldFunction();
+
+// userFieldFunction_9.getTypeOption().setSelected(FieldFunctionTypeOption.Type.SYMMETRICTENSOR);
+
+// userFieldFunction_9.setPresentationName("Shear Stress Tensor");
+
+// userFieldFunction_9.setFunctionName("Shear Stress Tensor");
+
+// userFieldFunction_9.setDefinition("2*${DynamicViscosity}*[$${U_VelocityGrad}[0] ; .5*($${U_VelocityGrad}[1]+$${V_VelocityGrad}[0]),$${V_VelocityGrad}[1] ; .5*($${U_VelocityGrad}[2]+$${W_VelocityGrad}[0]),.5*($${V_VelocityGrad}[2]+$${W_VelocityGrad}[1]),$${W_VelocityGrad}[2]]");
+// viscosity term has been removed to increase the magnitudes of the values
+// have to turn solvers>Segregated flow>properties - tick Temporary Storage Retained and step sim
 }

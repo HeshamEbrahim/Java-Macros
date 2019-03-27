@@ -46,7 +46,7 @@ public class translateGeometry extends simSetup {
     simulation_0.get(SimulationPartManager.class).translateParts(new NeoObjectVector(new Object[] {meshPart_1}), new DoubleVector(new double[] {0.0, 0.0, 0.31848791241645813}), new NeoObjectVector(new Object[] {units_0, units_0, units_0}), labCoordinateSystem_0);
 
     // translate in x
-    simulation_0.get(SimulationPartManager.class).translateParts(new NeoObjectVector(new Object[] {meshPart_1}), new DoubleVector(new double[] {3.113023, 0.0, 0.0}), new NeoObjectVector(new Object[] {units_0, units_0, units_0}), labCoordinateSystem_0);
+    simulation_0.get(SimulationPartManager.class).translateParts(new NeoObjectVector(new Object[] {meshPart_1}), new DoubleVector(new double[] {3.113023+(leadingVehicleLength*0.25), 0.0, 0.0}), new NeoObjectVector(new Object[] {units_0, units_0, units_0}), labCoordinateSystem_0);
 
   }
 
